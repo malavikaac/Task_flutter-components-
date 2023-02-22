@@ -29,7 +29,7 @@ void main() {
                       child: Container(
                         width: 288,
                         height: 268,
-                        //container
+                        //------------------------container1-------------
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(37),
                           boxShadow: [
@@ -220,69 +220,14 @@ void main() {
                         ),
                       ), //
                     ),
-                    //Container
+//----------------------------========================Container2=======================================================================================================--------------------------------------------------
 
                     SizedBox(
                       width: 20,
                     ), //SizedBox
                     Container(
-                        width: 288,
-                        height: 268,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(10),
-                          color: Color.fromARGB(255, 236, 188, 117),
-                        ) //BoxDecoration
-                        ) //Container
-                  ], //<Widget>[]
-                  mainAxisAlignment: MainAxisAlignment.center,
-                ), //Row
-                Container(
-                  width: 288,
-                  height: 248,
-                  decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10),
-                      color:
-                          Color.fromARGB(255, 133, 171, 202)), //BoxDecoration
-                ), //Container
-                Row(
-                  children: <Widget>[
-                    Container(
-                      width: 180,
-                      height: 140,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.cyan,
-                      ),
-                      child: Center(
-                        child: StepProgressIndicator(
-                          totalSteps: 100,
-                          currentStep: 32,
-                          size: 8,
-                          padding: 0,
-                          selectedColor: Colors.yellow,
-                          unselectedColor: Colors.cyan,
-                          roundedEdges: Radius.circular(10),
-                          selectedGradientColor: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Colors.yellowAccent, Colors.deepOrange],
-                          ),
-                          unselectedGradientColor: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Colors.black, Colors.blue],
-                          ),
-                        ),
-                      ), //BoxDecoration
-                    ), //Container
-                    SizedBox(
-                      width: 20,
-                    ), //SizedBox
-//==========================================changed here===========================================================================================================================
-//container 5
-                    Container(
-                      width: 300,
-                      height: 270,
+                      width: 288,
+                      height: 268,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(37),
                         boxShadow: [
@@ -370,7 +315,7 @@ void main() {
                                             size: 25,
                                             color: Color(0xff828282),
                                           )),
-//=====================================================icon==================================
+                                      //-------------------------------------=icon---------------------------
                                     ],
                                   ),
                                 ),
@@ -393,123 +338,116 @@ void main() {
                                             "Malavika Ac",
                                             style: TextStyle(
                                               color: Colors.black,
-                                              fontSize: 14,
+                                              fontSize: 15,
                                               fontFamily: "Inter",
-                                              fontWeight: FontWeight.w600,
+                                              fontWeight: FontWeight.bold,
                                             ),
                                           ),
                                         ),
-                                        SizedBox(height: 10),
-                                        Text(
-                                          "Flutter Developer",
-                                          style: TextStyle(
-                                            color: Color(0xff828282),
-                                            fontSize: 10,
+                                        //SizedBox(height:),
+                                        Padding(
+                                          padding: EdgeInsets.fromLTRB(7, 0, 0, 0),
+                                          child: Text(
+                                            "Flutter Developer",
+                                            style: TextStyle(
+                                              color: Color(0xff828282),
+                                              fontSize: 12.0,
+                                              fontWeight: FontWeight.w400,
+                                            ),
                                           ),
                                         ),
                                       ],
                                     ),
                                   ),
                                 ),
-                                SizedBox(height: 20),
+                                SizedBox(height: 10.0),
                                 Container(
                                   width: 203,
-                                  height: 68,
+                                  height: 85,
                                   child: Column(
                                     mainAxisSize: MainAxisSize.min,
                                     mainAxisAlignment: MainAxisAlignment.end,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.center,
                                     children: [
-                                    Padding(
-                                      padding: EdgeInsets.fromLTRB(0, 0, 58, 30),
-                                      child: Text(
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 0, 58, 10),
+                                        child: Text(
                                           "Project Progress",
                                           style: TextStyle(
                                             color: Colors.black,
                                             fontSize: 17,
                                             fontFamily: "Inter",
-                                            fontWeight: FontWeight.w600,
+                                            fontWeight: FontWeight.bold,
                                           ),
                                         ),
-                                    ),
-                                      SizedBox(height:10),
-                                      Container(
-                                        width: 203,
-                                        height: 0,
-                                        child: Column(
-                                          mainAxisSize: MainAxisSize.min,
-                                          mainAxisAlignment:
-                                              MainAxisAlignment.end,
-                                          crossAxisAlignment:
-                                              CrossAxisAlignment.center,
-                                          children: [
-                                            Padding(
-                                              padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
-                                              child: Text(
-                                                "75%",
-                                                style: TextStyle(
-                                                  color: Colors.black,
-                                                  fontSize: 15,
-                                                  fontFamily: "Inter",
-                                                  fontWeight: FontWeight.w700,
+                                      ),
+                                      SizedBox(height: 0.0),
+                                      Padding(
+                                        padding: const EdgeInsets.only(
+                                            bottom: 0, right: 0, left: 150),
+                                        child: Text(
+                                          '75%',
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.w700,
+                                            fontSize: 16.0,
+                                          ),
+                                        ),
+                                      ),
+                                      SizedBox(height: 9),
+                                      Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(0, 2, 0, 0),
+                                        child: Container(
+                                          width: 230,
+                                          height: 20,
+                                          child: Column(
+                                            mainAxisSize: MainAxisSize.min,
+                                            mainAxisAlignment:
+                                                MainAxisAlignment.end,
+                                            crossAxisAlignment:
+                                                CrossAxisAlignment.center,
+                                            children: [
+                                              Padding(
+                                                padding: EdgeInsets.fromLTRB(
+                                                    0, 0, 0, 4),
+                                                child: StepProgressIndicator(
+                                                  totalSteps: 100,
+                                                  currentStep: 75,
+                                                  size: 10,
+                                                  padding: 0,
+                                                  selectedColor: Colors.yellow,
+                                                  unselectedColor: Colors.cyan,
+                                                  roundedEdges:
+                                                      Radius.circular(10),
+                                                  selectedGradientColor:
+                                                      LinearGradient(
+                                                    begin: Alignment.topLeft,
+                                                    end: Alignment.bottomRight,
+                                                    colors: [
+                                                      Color.fromARGB(
+                                                          255, 20, 20, 20),
+                                                      Color.fromARGB(
+                                                          255, 19, 18, 18)
+                                                    ],
+                                                  ),
+                                                  unselectedGradientColor:
+                                                      LinearGradient(
+                                                    begin: Alignment.topLeft,
+                                                    end: Alignment.bottomRight,
+                                                    colors: [
+                                                      Color.fromARGB(
+                                                          217, 217, 217, 240),
+                                                      Color.fromARGB(
+                                                          217, 217, 217, 240)
+                                                    ],
+                                                  ),
                                                 ),
                                               ),
-                                            ),
-                                            SizedBox(height: 10),
-                                            Container(
-                                              width: 203,
-                                              height: 10,
-                                              child: Row(
-                                                mainAxisSize: MainAxisSize.min,
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.center,
-                                                crossAxisAlignment:
-                                                    CrossAxisAlignment.center,
-                                                children: [
-                                                  Container(
-                                                    width: 203,
-                                                    height: 10,
-                                                    decoration: BoxDecoration(
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              5),
-                                                      color: Color(0xffd9d9d9),
-                                                    ),
-                                                    padding:
-                                                        const EdgeInsets.only(
-                                                      right: 40,
-                                                    ),
-                                                    child: Row(
-                                                      mainAxisSize:
-                                                          MainAxisSize.min,
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .start,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .center,
-                                                      children: [
-                                                        Container(
-                                                          width: 163,
-                                                          height: 13,
-                                                          decoration:
-                                                              BoxDecoration(
-                                                            borderRadius:
-                                                                BorderRadius
-                                                                    .circular(
-                                                                        5),
-                                                            color: Color(
-                                                                0xff191616),
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ],
+                                            ],
+                                          ),
                                         ),
                                       ),
                                     ],
@@ -520,19 +458,201 @@ void main() {
                           ),
                         ],
                       ),
-                    ),
+                    ), //Container
                   ], //<Widget>[]
                   mainAxisAlignment: MainAxisAlignment.center,
                 ), //Row
-              ], //<widget>[]
+//==================----------------------container3----------------------------------------==========================================
+                Container(
+                  width: 288,
+                  height: 268,
+                  child: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Container(
+                        width: 288,
+                        height: 268,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(37),
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color(0x19d1d1d1),
+                              blurRadius: 0,
+                              offset: Offset(0, 0),
+                            ),
+                            BoxShadow(
+                              color: Color(0x19d1d1d1),
+                              blurRadius: 7,
+                              offset: Offset(1, 3),
+                            ),
+                            BoxShadow(
+                              color: Color(0x16d1d1d1),
+                              blurRadius: 12,
+                              offset: Offset(4, 12),
+                            ),
+                            BoxShadow(
+                              color: Color(0x0cd1d1d1),
+                              blurRadius: 17,
+                              offset: Offset(10, 26),
+                            ),
+                            BoxShadow(
+                              color: Color(0x02d1d1d1),
+                              blurRadius: 20,
+                              offset: Offset(17, 47),
+                            ),
+                            BoxShadow(
+                              color: Color(0x00d1d1d1),
+                              blurRadius: 22,
+                              offset: Offset(27, 73),
+                            ),
+                          ],
+                          color: Colors.white,
+                        ),
+                        padding: const EdgeInsets.only(
+                          left: 70,
+                          right: 91,
+                          top: 42,
+                          bottom: 41,
+                        ),
+                        child: Row(
+                          mainAxisSize: MainAxisSize.min,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Container(
+                              width: 105,
+                              height: 175,
+                              child: Column(
+                                mainAxisSize: MainAxisSize.min,
+                                mainAxisAlignment: MainAxisAlignment.end,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Center(
+                                    child: Container(
+                                      width: 100,
+                                      height: 100,
+                                      // decoration: BoxDecoration(
+                                      //shape: BoxShape.circle,
+                                      child: Center(
+                                        child: CircleAvatar(
+                                          backgroundColor: Color.fromARGB(
+                                              255, 247, 245, 245),
+                                          radius: 80,
+                                          child: CircleAvatar(
+                                            radius: 70,
+                                            backgroundImage: AssetImage(
+                                                'assets/jpg/mala.jpg'),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ), //,
+
+                                  // ),
+                                  SizedBox(height: 20),
+                                  Container(
+                                    width: 105,
+                                    height: 55,
+                                    child: Column(
+                                      mainAxisSize: MainAxisSize.min,
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.center,
+                                      children: [
+                                        Text(
+                                          "Malavika Ac",
+                                          style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 17.5,
+                                            fontFamily: "Inter",
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                        SizedBox(height: 10),
+                                        Text(
+                                          "Flutter developer",
+                                          style: TextStyle(
+                                            color: Color(0xff828282),
+                                            fontSize: 13.5,
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+//================================================================Container4=========================================================================================================================================
+                Row(
+                  children: <Widget>[
+                    Container(
+                      width: 180,
+                      height: 150,
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        color: Color.fromARGB(255, 131, 197, 206),
+                      ),
+                      child: Center(
+                        child: StepProgressIndicator(
+                          totalSteps: 100,
+                          currentStep: 32,
+                          size: 8,
+                          padding: 0,
+                          selectedColor: Colors.yellow,
+                          unselectedColor: Colors.cyan,
+                          roundedEdges: Radius.circular(10),
+                          selectedGradientColor: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [Colors.yellowAccent, Colors.deepOrange],
+                          ),
+                          unselectedGradientColor: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: [Colors.black, Colors.blue],
+                          ),
+                        ),
+                      ),
+                    ),
+                    SizedBox(
+                      width: 20,
+                    ),
+//==========================================changed here===========================================================================================================================
+//container 5
+                    // Container(
+                    //   width: 288,
+                    //   height: 208,
+                    //   decoration: BoxDecoration(
+                    //       borderRadius: BorderRadius.circular(10),
+                    //       color: Color.fromARGB(255, 248, 222, 173)),
+                    //   child: Center(
+                    //     child: Icon(
+                    //       Icons.more_vert,
+                    //       size: 20,
+                    //       color: Colors.blueGrey,
+                    //     ),
+                    //   ),
+                    // ), //
+                  ],
+                  mainAxisAlignment: MainAxisAlignment.center,
+                ),
+              ],
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               crossAxisAlignment: CrossAxisAlignment.center,
-            ), //Column
-          ) //Padding
-              ), //Container
-        ) //Center
-        ), //Scaffold
-
+            ),
+          )),
+        )),
     debugShowCheckedModeBanner: false,
-  )); //MaterialApp
+  ));
 }
+
+
