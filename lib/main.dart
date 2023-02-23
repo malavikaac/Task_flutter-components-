@@ -346,7 +346,8 @@ void main() {
                                         ),
                                         //SizedBox(height:),
                                         Padding(
-                                          padding: EdgeInsets.fromLTRB(7, 0, 0, 0),
+                                          padding:
+                                              EdgeInsets.fromLTRB(7, 0, 0, 0),
                                           child: Text(
                                             "Flutter Developer",
                                             style: TextStyle(
@@ -467,8 +468,8 @@ void main() {
                   width: 288,
                   height: 268,
                   child: Row(
-                    mainAxisSize: MainAxisSize.min,
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    mainAxisSize: MainAxisSize.max,
+                    mainAxisAlignment: MainAxisAlignment.center,
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
@@ -594,54 +595,12 @@ void main() {
 //================================================================Container4=========================================================================================================================================
                 Row(
                   children: <Widget>[
-                    Container(
-                      width: 180,
-                      height: 150,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Color.fromARGB(255, 131, 197, 206),
-                      ),
-                      child: Center(
-                        child: StepProgressIndicator(
-                          totalSteps: 100,
-                          currentStep: 32,
-                          size: 8,
-                          padding: 0,
-                          selectedColor: Colors.yellow,
-                          unselectedColor: Colors.cyan,
-                          roundedEdges: Radius.circular(10),
-                          selectedGradientColor: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Colors.yellowAccent, Colors.deepOrange],
-                          ),
-                          unselectedGradientColor: LinearGradient(
-                            begin: Alignment.topLeft,
-                            end: Alignment.bottomRight,
-                            colors: [Colors.black, Colors.blue],
-                          ),
-                        ),
-                      ),
-                    ),
                     SizedBox(
                       width: 20,
                     ),
 //==========================================changed here===========================================================================================================================
 //container 5
-                    // Container(
-                    //   width: 288,
-                    //   height: 208,
-                    //   decoration: BoxDecoration(
-                    //       borderRadius: BorderRadius.circular(10),
-                    //       color: Color.fromARGB(255, 248, 222, 173)),
-                    //   child: Center(
-                    //     child: Icon(
-                    //       Icons.more_vert,
-                    //       size: 20,
-                    //       color: Colors.blueGrey,
-                    //     ),
-                    //   ),
-                    // ), //
+                    //
                   ],
                   mainAxisAlignment: MainAxisAlignment.center,
                 ),
@@ -654,5 +613,3 @@ void main() {
     debugShowCheckedModeBanner: false,
   ));
 }
-
-
